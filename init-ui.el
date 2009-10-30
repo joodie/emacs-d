@@ -22,6 +22,13 @@
 (color-theme-initialize)
 (color-theme-vim-colors)
 
+(defvar mail-spool-file (concat "/var/spool/mail/" (getenv "USER")))
+(setq display-time-24hr-format t
+      display-time-day-and-date t
+      display-time-mail-file (and (file-regular-p mail-spool-file)
+				  mail-spool-file))
+(display-time)
+
 
 (provide 'init-ui)
 
