@@ -32,5 +32,7 @@
 				  mail-spool-file))
 (display-time)
 
+(require 'iswitch-menu)
+
 (provide 'init-ui)
 

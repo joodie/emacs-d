@@ -10,3 +10,6 @@
 [submodule "ext/clojure-mode"]
 	path = ext/clojure-mode
 	url = git://github.com/jochu/clojure-mode.git
+[submodule "ext/iswitch-menu"]
+	path = ext/iswitch-menu
+	url = git://github.com/joodie/iswitch-menu.git
