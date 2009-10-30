@@ -7,11 +7,14 @@
 (mouse-wheel-mode 1)
 (setq inhibit-splash-screen t)
 (setq show-paren-style 'expression)
+(show-paren-mode 1)
 (global-set-key (kbd "M-g") 'goto-line)
 (fset 'yes-or-no-p 'y-or-n-p)
 (setq default-indicate-empty-lines t)
 (setq default-indicate-buffer-boundaries t)
 (ido-mode t)
+(setq use-file-dialog nil)
+(setq use-dialog-box nil)
 
 ;; do NOT iconify on C-z when running X
 (defun iconify-or-deiconify-frame
@@ -28,7 +31,6 @@
       display-time-mail-file (and (file-regular-p mail-spool-file)
 				  mail-spool-file))
 (display-time)
-
 
 (provide 'init-ui)
 
