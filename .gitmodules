@@ -1,0 +1,3 @@
+[submodule "ext/egg"]
+	path = ext/egg
+	url = git://github.com/bogolisk/egg.git
