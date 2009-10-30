@@ -1,5 +1,5 @@
 (set-face-attribute 'default nil
-		    :family "Inconsolata" :height 140 :weight 'normal)
+		    :family "Inconsolata" :height 145 :weight 'normal)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 (line-number-mode 1)
@@ -33,6 +33,7 @@
 (display-time)
 
 (require 'iswitch-menu)
+(require 'elscreen)
 
 (provide 'init-ui)
 
