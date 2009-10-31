@@ -11,7 +11,7 @@
 (global-set-key (kbd "M-g") 'goto-line)
 (fset 'yes-or-no-p 'y-or-n-p)
 (setq default-indicate-empty-lines t)
-(setq default-indicate-buffer-boundaries t)
+(setq default-indicate-buffer-boundaries 'left)
 (ido-mode t)
 (setq use-file-dialog nil)
 (setq use-dialog-box nil)
