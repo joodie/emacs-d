@@ -8,6 +8,7 @@
 (setq flymake-extension-use-showtip t)
 (setq flymake-extension-auto-show nil)
 
+(add-ext-load-path "egg")
 (require 'egg)
 
 (provide 'topic-programming)

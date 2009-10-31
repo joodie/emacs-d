@@ -21,6 +21,7 @@
   (interactive) 
   ())
 
+(add-ext-load-path "color-theme")
 (require 'color-theme)
 (color-theme-initialize)
 (color-theme-vim-colors)
@@ -32,8 +33,10 @@
 				  mail-spool-file))
 (display-time)
 
+(add-ext-load-path "iswitch-menu")
 (require 'iswitch-menu)
 
+(add-ext-load-path "elscreen" "apel")
 (setq elscreen-display-tab nil)
 (require 'elscreen)
 

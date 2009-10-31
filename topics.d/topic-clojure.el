@@ -1,4 +1,8 @@
-(add-to-list 'load-path "~/.emacs.d/ext/swank-clojure/src/emacs")
+(add-ext-load-path "swank-clojure/src/emacs"
+		   "clojure-mode"
+		   "swank-clojure"
+		   "slime")
+
 (setq swank-clojure-binary "clj")
 
 (require 'clojure-mode)
