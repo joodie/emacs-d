@@ -16,6 +16,6 @@
 
 (add-hook 'clojure-mode-hook 'slime-mode)
 
-(add-hook 'clojure-mode-hook       (lambda () (paredit-mode +1)))
+(add-hook 'clojure-mode-hook 'start-paredit)
 
 (provide 'topic-clojure)
