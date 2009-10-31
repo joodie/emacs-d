@@ -7,5 +7,10 @@
 
 ;; don't ask me why, but this is the only way setting the cursor color
 ;; works on my emacs.app
-(run-at-time 1 nil 'set-face-attribute 'cursor nil :background "green")
-(run-at-time 2 nil 'set-face-attribute 'cursor nil :background "red")
+(defun set-my-cursor-props (&rest frame)
+  (run-at-time 0.1 nil 'set-face-attribute 'cursor nil :background "green")
+  (run-at-time 0.2 nil 'set-face-attribute 'cursor nil :background "red"))
+;; again, emacs.app loses its cursor config for new frames
+(add-to-list 'after-make-frame-functions 'set-my-cursor-props)
+(set-my-cursor-props)
+
