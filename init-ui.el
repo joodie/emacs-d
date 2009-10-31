@@ -33,7 +33,12 @@
 (display-time)
 
 (require 'iswitch-menu)
+
+(setq elscreen-display-tab nil)
 (require 'elscreen)
+
+(setq initial-scratch-message "")
+(blink-cursor-mode 1)
 
 (provide 'init-ui)
 
