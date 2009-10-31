@@ -13,3 +13,6 @@
 [submodule "ext/iswitch-menu"]
 	path = ext/iswitch-menu
 	url = git://github.com/joodie/iswitch-menu.git
+[submodule "ext/smex"]
+	path = ext/smex
+	url = git://github.com/nonsequitur/smex.git
