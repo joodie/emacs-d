@@ -40,5 +40,8 @@
 (setq initial-scratch-message "")
 (blink-cursor-mode 1)
 
+;; otherwise, emacs.app won't recognize delete (fn-backspace)
+(normal-erase-is-backspace-mode 1)
+
 (provide 'init-ui)
 
