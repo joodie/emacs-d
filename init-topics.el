@@ -7,7 +7,6 @@
     (when (and (file-regular-p full-path)
 	     (string-match "\\(topic-.*\\)\\.el$" f))
       (let ((req (match-string 1 f)))
-	(message (concat "loading topic " req))
 	(require (intern req))))))
 
 (provide 'init-topics)
