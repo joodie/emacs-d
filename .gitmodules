@@ -16,3 +16,6 @@
 [submodule "ext/smex"]
 	path = ext/smex
 	url = git://github.com/nonsequitur/smex.git
+[submodule "ext/relax"]
+	path = ext/relax
+	url = git://github.com/joodie/relax.el.git
