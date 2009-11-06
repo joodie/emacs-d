@@ -1,5 +1,8 @@
+(require 'cl)
 (set-face-attribute 'default nil
-		    :family "Inconsolata" :height 145 :weight 'normal)
+		    :family "Inconsolata" :height (case system-type
+						    ('gnu/linux 130)
+						    ('darwin 145)) :weight 'normal)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 (line-number-mode 1)
