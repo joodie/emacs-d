@@ -10,7 +10,8 @@
  '(ido-max-prospects 0)
  '(ido-max-window-height 30)
  '(ido-use-filename-at-point (quote guess))
- '(ido-use-url-at-point nil))
+ '(ido-use-url-at-point nil)
+ '(swank-clojure-binary "/usr/bin/clj"))
 (custom-set-faces
   ;; custom-set-faces was added by Custom.
   ;; If you edit it by hand, you could mess it up, so be careful.
