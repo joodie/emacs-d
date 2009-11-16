@@ -3,6 +3,9 @@
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
+ '(blink-cursor-mode t)
+ '(column-number-mode t)
+ '(display-time-mode t)
  '(ido-enable-flex-matching t)
  '(ido-enable-regexp t)
  '(ido-everywhere t)
@@ -11,6 +14,7 @@
  '(ido-max-window-height 30)
  '(ido-use-filename-at-point (quote guess))
  '(ido-use-url-at-point nil)
+ '(show-paren-mode t)
  '(swank-clojure-binary "/usr/bin/clj"))
 (custom-set-faces
   ;; custom-set-faces was added by Custom.
