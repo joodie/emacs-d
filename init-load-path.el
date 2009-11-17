@@ -1,10 +1,10 @@
 (defun add-to-epath (name path)
   (let ((current (getenv name)))
     (if (and current
-	     (not (member path (split-string current ":" t))))
-	(if (string= current "")
-	    (setenv name path)
-	  (setenv name (concat path ":" current))))
+             (not (member path (split-string current ":" t))))
+        (if (string= current "")
+            (setenv name path)
+          (setenv name (concat path ":" current))))
     (getenv name)))
 
 (when (file-directory-p "/opt/local/bin")
