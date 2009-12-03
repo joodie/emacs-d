@@ -1,8 +1,8 @@
 (require 'cl)
 (set-face-attribute 'default nil
-		    :family "Inconsolata" :height (case system-type
-						    ('gnu/linux 130)
-						    ('darwin 145)) :weight 'normal)
+                    :family "Inconsolata" :height (case system-type
+                                                    ('gnu/linux 130)
+                                                    ('darwin 145)) :weight 'normal)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 (line-number-mode 1)
@@ -15,7 +15,7 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 (setq default-indicate-empty-lines t)
 (setq default-indicate-buffer-boundaries 'left)
-(ido-mode t)
+(iswitchb-mode t)
 (setq use-file-dialog nil)
 (setq use-dialog-box nil)
 
@@ -33,7 +33,7 @@
 (setq display-time-24hr-format t
       display-time-day-and-date t
       display-time-mail-file (and (file-regular-p mail-spool-file)
-				  mail-spool-file))
+                                  mail-spool-file))
 (display-time)
 
 (add-ext-load-path "iswitch-menu")
