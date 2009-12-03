@@ -10,9 +10,6 @@
 (require 'swank-clojure)
 (require 'slime)
 
-(setq slime-lisp-implementations
-             `((clojure (,swank-clojure-binary) :init swank-clojure-init))) 
-
 (add-hook 'clojure-mode-hook 'slime-mode)
 
 (add-hook 'clojure-mode-hook 'start-paredit)
@@ -20,5 +17,12 @@
 (slime-setup 
  '(slime-fancy ;; turns on fancy inspector, autodoc and other useful stuff
    slime-highlight-edits)) 
+
+(defun clojure (binary)
+  (interactive "fbinary: ")
+  (setq swank-clojure-binary (or binary "clj"))
+  (setq slime-lisp-implementations
+        `((clojure (,swank-clojure-binary) :init swank-clojure-init))) 
+  (slime))
 
 (provide 'topic-clojure)
