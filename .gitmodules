@@ -19,3 +19,6 @@
 [submodule "ext/relax"]
 	path = ext/relax
 	url = git://github.com/joodie/relax.el.git
+[submodule "ext/haskell-mode"]
+	path = ext/haskell-mode
+	url = git://github.com/jwiegley/haskell-mode.git
