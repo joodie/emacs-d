@@ -22,3 +22,6 @@
 [submodule "ext/haskell-mode"]
 	path = ext/haskell-mode
 	url = git://github.com/jwiegley/haskell-mode.git
+[submodule "ext/smart-tab"]
+	path = ext/smart-tab
+	url = http://github.com/dhax/smart-tab.git
