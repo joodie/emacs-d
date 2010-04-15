@@ -49,5 +49,7 @@
 ;; otherwise, emacs.app won't recognize delete (fn-backspace)
 (normal-erase-is-backspace-mode 1)
 
+(require 'company)
+
 (provide 'init-ui)
 

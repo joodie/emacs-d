@@ -8,16 +8,17 @@
 (require 'clojure-mode)
 (require 'swank-clojure)
 (require 'slime)
-
-
+(require 'slime-company)
 
 (slime-setup 
  '(slime-fancy ;; turns on fancy inspector, autodoc and other useful stuff
-   slime-highlight-edits)) 
+   slime-highlight-edits
+   slime-company)) 
 
 (add-hook 'clojure-mode-hook '(lambda ()
                                 (slime-mode 1)
-                                (start-paredit)))
+                                (start-paredit)
+                                (company-mode 1)))
 
 (defun clojure (binary)
   (interactive "fbinary: ")
