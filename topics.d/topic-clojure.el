@@ -4,19 +4,20 @@
                    "slime")
 
 (setq swank-clojure-binary "clj")
-
+(setq package-activated-list ())
 (require 'clojure-mode)
-(require 'swank-clojure-autoload)
 (require 'swank-clojure)
 (require 'slime)
 
-(add-hook 'clojure-mode-hook 'slime-mode)
 
-(add-hook 'clojure-mode-hook 'start-paredit)
 
 (slime-setup 
  '(slime-fancy ;; turns on fancy inspector, autodoc and other useful stuff
    slime-highlight-edits)) 
+
+(add-hook 'clojure-mode-hook '(lambda ()
+                                (slime-mode 1)
+                                (start-paredit)))
 
 (defun clojure (binary)
   (interactive "fbinary: ")
