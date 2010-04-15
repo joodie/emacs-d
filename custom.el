@@ -12,6 +12,7 @@
  '(ido-max-window-height 30)
  '(ido-use-filename-at-point (quote guess))
  '(ido-use-url-at-point nil)
+ '(smart-tab-completion-functions-alist (quote ((emacs-lisp-mode . lisp-complete-symbol) (text-mode . dabbrev-completion) (clojure-mode . slime-complete-symbol))))
  '(swank-clojure-binary "/usr/bin/clj"))
 (custom-set-faces
   ;; custom-set-faces was added by Custom.
