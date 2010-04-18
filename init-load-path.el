@@ -22,4 +22,6 @@
   (dolist (p ps) 
     (add-to-list 'load-path (concat my-ext-dir "/" p))))
 
+(add-ext-load-path "company")
+
 (provide 'init-load-path)

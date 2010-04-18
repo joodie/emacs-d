@@ -1,15 +1,6 @@
 [submodule "ext/egg"]
 	path = ext/egg
 	url = git://github.com/bogolisk/egg.git
-[submodule "ext/slime"]
-	path = ext/slime
-	url = git://github.com/nablaone/slime.git
-[submodule "ext/swank-clojure"]
-	path = ext/swank-clojure
-	url = git://github.com/jochu/swank-clojure.git
-[submodule "ext/clojure-mode"]
-	path = ext/clojure-mode
-	url = git://github.com/jochu/clojure-mode.git
 [submodule "ext/iswitch-menu"]
 	path = ext/iswitch-menu
 	url = git://github.com/joodie/iswitch-menu.git
@@ -25,3 +16,15 @@
 [submodule "ext/smart-tab"]
 	path = ext/smart-tab
 	url = git://github.com/genehack/smart-tab.git
+[submodule "ext/android-mode"]
+	path = ext/android-mode
+	url = http://github.com/remvee/android-mode.git
+[submodule "ext/slime"]
+	path = ext/slime
+	url = git://github.com/technomancy/slime.git
+[submodule "ext/clojure-mode"]
+	path = ext/clojure-mode
+	url = git://github.com/technomancy/clojure-mode.git
+[submodule "ext/swank-clojure"]
+	path = ext/swank-clojure
+	url = git://github.com/technomancy/swank-clojure.git
