@@ -13,4 +13,5 @@
 ;; again, emacs.app loses its cursor config for new frames
 (add-to-list 'after-make-frame-functions 'set-my-cursor-props)
 (set-my-cursor-props)
+(setq debug-on-error nil) ;; some stuff in ext/ apparently sets this
 
