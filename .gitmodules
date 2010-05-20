@@ -28,3 +28,6 @@
 [submodule "ext/swank-clojure"]
 	path = ext/swank-clojure
 	url = git://github.com/technomancy/swank-clojure.git
+[submodule "ext/emacs-rails"]
+	path = ext/emacs-rails
+	url = git@github.com:remvee/emacs-rails.git
