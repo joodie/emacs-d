@@ -7,5 +7,4 @@
  '(column-number-mode t)
  '(display-time-mode t)
  '(android-mode-sdk-dir "~/lib/android-sdk")
- '(smart-tab-completion-functions-alist (quote ((emacs-lisp-mode . lisp-complete-symbol) (text-mode . dabbrev-completion) (clojure-mode . slime-complete-symbol))))
  '(swank-clojure-binary "/usr/bin/clj"))
