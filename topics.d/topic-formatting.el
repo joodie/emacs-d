@@ -15,4 +15,9 @@
 (require 'smart-tab)
 (global-smart-tab-mode 1)
 
+(setq smart-tab-completion-functions-alist 
+      '((emacs-lisp-mode . lisp-complete-symbol) 
+        (text-mode . dabbrev-completion)
+        (slime-mode . slime-complete-symbol)))
+
 (provide 'topic-formatting)
