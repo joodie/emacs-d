@@ -9,7 +9,7 @@
 (require 'swank-clojure)
 (require 'slime)
 (require 'slime-company)
-
+(setq slime-protocol-version 'ignore)
 (slime-setup 
  '(slime-fancy ;; turns on fancy inspector, autodoc and other useful stuff
    slime-highlight-edits
