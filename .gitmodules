@@ -31,3 +31,6 @@
 [submodule "ext/emacs-rails"]
 	path = ext/emacs-rails
 	url = git@github.com:remvee/emacs-rails.git
+[submodule "ext/slime-complete-locals"]
+	path = ext/slime-complete-locals
+	url = git@github.com:joodie/slime-complete-locals.git
