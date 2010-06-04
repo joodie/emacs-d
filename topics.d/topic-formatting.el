@@ -16,8 +16,8 @@
 (global-smart-tab-mode 1)
 
 (setq smart-tab-completion-functions-alist 
-      '((emacs-lisp-mode . lisp-complete-symbol) 
-        (text-mode . dabbrev-completion)
-        (slime-mode . slime-complete-symbol)))
+      '((clojure-mode . company-manual-begin)
+        (emacs-lisp-mode . lisp-complete-symbol) 
+        (text-mode . dabbrev-completion)))
 
 (provide 'topic-formatting)

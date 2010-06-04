@@ -8,7 +8,6 @@
  '(column-number-mode t)
  '(display-time-mode t)
  '(rails-always-use-text-menus t)
- '(smart-tab-completion-functions-alist (quote ((emacs-lisp-mode . lisp-complete-symbol) (text-mode . dabbrev-completion) (clojure-mode . slime-complete-symbol))))
  '(swank-clojure-binary "/usr/bin/clj"))
 (custom-set-faces
   ;; custom-set-faces was added by Custom.
