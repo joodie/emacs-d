@@ -3,8 +3,13 @@
                     :family "Inconsolata" :height (case system-type
                                                     ('gnu/linux 130)
                                                     ('darwin 145)) :weight 'normal)
-(tool-bar-mode -1)
-(scroll-bar-mode -1)
+
+(when (fboundp 'tool-bar-mode)
+  (tool-bar-mode -1)) 
+
+(when (fboundp 'scroll-bar-mode)
+  (scroll-bar-mode -1)) 
+
 (line-number-mode 1)
 (column-number-mode 1)
 (mouse-wheel-mode 1)
