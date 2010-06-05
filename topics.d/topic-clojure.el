@@ -23,7 +23,7 @@
                                 (start-paredit)
                                 (company-mode 1)))
 
-(setq slime-complete-symbol-function 'slime-simple-complete-symbol)
+(setq slime-complete-symbol-function 'slime-complete-symbol*)
 
 (defun clojure (binary)
   (interactive "fbinary: ")
