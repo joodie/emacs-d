@@ -16,13 +16,14 @@
 (global-smart-tab-mode 1)
 
 ;; some more expansion stuff
-(require 'company-mode)
+(add-ext-load-path "company")
+(require 'company)
 (global-company-mode 1)
 (setq company-begin-commands '(self-insert-command)) ;; only complete on freshly typed text
 
 
 (setq smart-tab-completion-functions-alist 
-      '((clojure-mode . company-manual-begin)
+      '((clojure-mode . slime-complete-symbol)
         (emacs-lisp-mode . lisp-complete-symbol) 
         (text-mode . dabbrev-completion)))
 
