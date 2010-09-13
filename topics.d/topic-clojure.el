@@ -9,6 +9,7 @@
 (require 'clojure-mode)
 (require 'swank-clojure)
 (require 'slime)
+(require 'highlight-parentheses)
 
 (setq slime-protocol-version 'ignore)
 
@@ -21,6 +22,7 @@
 (add-hook 'clojure-mode-hook '(lambda ()
                                 (slime-mode 1)
                                 (start-paredit)
+                                (highlight-parentheses-mode 1)
                                 (company-mode 1)))
 
 (setq slime-complete-symbol-function 'slime-complete-symbol*)

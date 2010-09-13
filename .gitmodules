@@ -34,3 +34,6 @@
 [submodule "ext/slime-complete-locals"]
 	path = ext/slime-complete-locals
 	url = git@github.com:joodie/slime-complete-locals.git
+[submodule "ext/clojure-refactoring"]
+	path = ext/clojure-refactoring
+	url = http://github.com/tcrayford/clojure-refactoring.git

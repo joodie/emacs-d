@@ -4,10 +4,10 @@
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
  '(android-mode-sdk-dir "~/lib/android-sdk")
- '(blink-cursor-mode t)
  '(column-number-mode t)
  '(display-time-mode t)
  '(rails-always-use-text-menus t)
+ '(show-paren-mode t)
  '(swank-clojure-binary "/usr/bin/clj"))
 (custom-set-faces
   ;; custom-set-faces was added by Custom.
