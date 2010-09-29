@@ -6,6 +6,7 @@
  '(android-mode-sdk-dir "~/lib/android-sdk")
  '(column-number-mode t)
  '(display-time-mode t)
+ '(espresso-indent-level 2)
  '(rails-always-use-text-menus t)
  '(show-paren-mode t)
  '(swank-clojure-binary "/usr/bin/clj"))
