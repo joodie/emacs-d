@@ -1,13 +1,9 @@
-(add-ext-load-path "swank-clojure/src/emacs"
-                   "clojure-mode"
-                   "swank-clojure"
+(add-ext-load-path "clojure-mode"
                    "slime"
                    "slime-complete-locals")
 
-(setq swank-clojure-binary "clj")
 (setq package-activated-list ())
 (require 'clojure-mode)
-(require 'swank-clojure)
 (require 'slime)
 (require 'highlight-parentheses)
 
@@ -46,8 +42,6 @@
 
 (add-hook 'slime-repl-mode-hook 'slime-clojure-repl-setup)
 
-
-
 (defun lein-swank ()
   (interactive)
   (let ((root (locate-dominating-file default-directory "project.clj")))
@@ -56,6 +50,7 @@
     ;; you can customize slime-port using .dir-locals.el
     (shell-command (format "cd %s && lein swank %s &" root slime-port)
                    "*lein-swank*")
+
     (set-process-filter (get-buffer-process "*lein-swank*")
                         (lambda (process output)
                           (when (string-match "Connection opened on" output)
