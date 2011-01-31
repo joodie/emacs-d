@@ -23,7 +23,7 @@
 (iswitchb-mode t)
 (setq use-file-dialog nil)
 (setq use-dialog-box nil)
-
+(hl-line-mode 1)
 ;; do NOT iconify on C-z when running X
 (defun iconify-or-deiconify-frame
   (interactive) 
