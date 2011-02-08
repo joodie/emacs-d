@@ -11,6 +11,9 @@
 (add-ext-load-path "egg")
 (require 'egg)
 
+(add-ext-load-path "magit")
+(require 'magit)
+
 ;; use ansi colors in compile-mode
 (add-hook 'mode-compile-hook
           'ansi-color-for-comint-mode-on)

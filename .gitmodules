@@ -34,3 +34,6 @@
 [submodule "ext/clojure-refactoring"]
 	path = ext/clojure-refactoring
 	url = http://github.com/tcrayford/clojure-refactoring.git
+[submodule "ext/magit"]
+	path = ext/magit
+	url = https://github.com/philjackson/magit.git
