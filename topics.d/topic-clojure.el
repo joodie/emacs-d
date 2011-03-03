@@ -58,4 +58,8 @@
                             (set-process-filter process nil))))
     (message "Starting swank server...")))
 
+(add-ext-load-path "elein")
+
+(require 'elein)
+
 (provide 'topic-clojure)

@@ -37,3 +37,12 @@
 [submodule "ext/magit"]
 	path = ext/magit
 	url = https://github.com/philjackson/magit.git
+[submodule "ext/cedet"]
+	path = ext/cedet
+	url = https://github.com/emacsmirror/cedet.git
+[submodule "ext/malabar"]
+	path = ext/malabar
+	url = https://github.com/espenhw/malabar-mode.git
+[submodule "ext/elein"]
+	path = ext/elein
+	url = https://github.com/remvee/elein.git
