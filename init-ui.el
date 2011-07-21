@@ -16,6 +16,7 @@
 (setq inhibit-splash-screen t)
 (setq show-paren-style 'expression)
 (show-paren-mode 1)
+(menu-bar-mode -1)
 (global-set-key (kbd "M-g") 'goto-line)
 (fset 'yes-or-no-p 'y-or-n-p)
 (setq default-indicate-empty-lines t)

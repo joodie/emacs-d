@@ -15,3 +15,5 @@
 (set-my-cursor-props)
 (setq debug-on-error nil) ;; some stuff in ext/ apparently sets this
 
+
+(put 'narrow-to-page 'disabled nil)
